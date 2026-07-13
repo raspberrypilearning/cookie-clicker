@@ -39,6 +39,9 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 >
 > Add a sound so a click feels good. Open the **Sounds** tab, click the speaker
 > icon, and pick something short. Then add it to the top of your script.
+> Use `start sound`{:class="block3sound"} in this project, not
+> `play sound until done`{:class="block3sound"}, so the sound starts without
+> holding up the rest of the program.
 >
 > ![The Sounds tab at the top-left of the editor.](images/sounds_tab.png)
 >
