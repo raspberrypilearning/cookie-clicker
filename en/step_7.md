@@ -4,8 +4,7 @@ Make your equipment wiggle so the shop feels alive.
 
 > [!TASK]
 >
-> Add this script to your first piece of equipment. It rocks the sprite back and
-> forth forever.
+> Add this script to your first piece of equipment. It rocks the sprite back and forth forever.
 >
 > ```blocks3
 > when green flag clicked
@@ -23,7 +22,6 @@ Make your equipment wiggle so the shop feels alive.
 
 > [!TASK]
 >
-> Add the same script to your other equipment sprites by dragging it onto each one
-> in the sprite list.
+> Add the same script to your other equipment sprites by dragging it onto each one in the sprite list.
 
 Click the green flag. Your equipment rocks gently from side to side.

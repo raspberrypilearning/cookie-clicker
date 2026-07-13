@@ -10,11 +10,9 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Add your own sprite with **Choose a Sprite** (library, **Upload**, or
-> **Paint**). The pizza shop uses a pizza.
+> Add your own sprite with **Choose a Sprite** (library, **Upload**, or **Paint**). The pizza shop uses a pizza.
 >
-> Use your own sprite, or save [the pizza sprite](images/pizza.png) and import it
-> with **Upload**.
+> Use your own sprite, or save [the pizza sprite](images/pizza.png) and import it with **Upload**.
 >
 > ![The pizza shop's pizza sprite.](images/pizza.png)
 >
@@ -22,8 +20,7 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Make a variable called `pizzas`{:class="block3variables"} and tick it so the
-> player can see their score.
+> Make a variable called `pizzas`{:class="block3variables"} and tick it so the player can see their score.
 >
 > ![The Make a Variable button in the Variables palette.](images/make-a-variable.png)
 >
@@ -42,11 +39,7 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> Add a sound so a click feels good. Open the **Sounds** tab, click the speaker
-> icon, and pick something short. Then add it to the top of your script.
-> Use `start sound`{:class="block3sound"} in this project, not
-> `play sound until done`{:class="block3sound"}, so the sound starts without
-> holding up the rest of the program.
+> Add a sound so a click feels good. Open the **Sounds** tab, click the speaker icon, and pick something short. Then add it to the top of your script. Use `start sound`{:class="block3sound"} in this project, not `play sound until done`{:class="block3sound"}, so the sound starts without holding up the rest of the program.
 >
 > ![The Sounds tab at the top-left of the editor.](images/sounds_tab.png)
 >
@@ -71,9 +64,7 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> Start a new script. On the green flag, set the sprite to
-> `not draggable`{:class="block3sensing"} so the player clicks it instead of
-> accidentally dragging it around the stage.
+> Start a new script. On the green flag, set the sprite to `not draggable`{:class="block3sensing"} so the player clicks it instead of accidentally dragging it around the stage.
 >
 > ```blocks3
 > when green flag clicked
@@ -82,8 +73,7 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> Add the win to the same script. It waits until the score is high enough, then
-> celebrates.
+> Add the win to the same script. It waits until the score is high enough, then celebrates.
 >
 > ```blocks3
 > when green flag clicked

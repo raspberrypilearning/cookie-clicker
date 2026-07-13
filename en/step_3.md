@@ -4,13 +4,11 @@ Add equipment the player can unlock to make every click worth more.
 
 > [!TASK]
 >
-> Make a variable called `pizzas per click`{:class="block3variables"}. This is how
-> many pizzas one click makes.
+> Make a variable called `pizzas per click`{:class="block3variables"}. This is how many pizzas one click makes.
 
 > [!TASK]
 >
-> Click the `Stage`{:class="block3looks"} and set it to `1` on the green flag, so a
-> click always makes at least one pizza.
+> Click the `Stage`{:class="block3looks"} and set it to `1` on the green flag, so a click always makes at least one pizza.
 >
 > ```blocks3
 > when green flag clicked
@@ -31,23 +29,19 @@ Add equipment the player can unlock to make every click worth more.
 > change size by (-10)
 > ```
 
-Nothing changes yet, because `pizzas per click`{:class="block3variables"} is still
-`1`. The equipment will raise it.
+Nothing changes yet, because `pizzas per click`{:class="block3variables"} is still `1`. The equipment will raise it.
 
 > [!TASK]
 >
 > Add your first piece of equipment as a new sprite. The pizza shop uses a cutter.
 >
-> Use your own equipment, or save [the cutter sprite](images/cutter.png) and
-> import it with **Upload**.
+> Use your own equipment, or save [the cutter sprite](images/cutter.png) and import it with **Upload**.
 >
 > ![The pizza shop's cutter.](images/cutter.png)
 
 > [!TASK]
 >
-> Give it a second costume that shows it's been bought: in the **Costumes** tab,
-> right-click the costume and choose **duplicate**, then change the copy (the pizza
-> shop adds a green tick). Keep the plain costume first and the "bought" one second.
+> Give it a second costume that shows it's been bought: in the **Costumes** tab, right-click the costume and choose **duplicate**, then change the copy (the pizza shop adds a green tick). Keep the plain costume first and the "bought" one second.
 >
 > ![Right-clicking a costume to duplicate it in the Costumes tab.](images/duplicate-costume.png)
 
@@ -71,8 +65,7 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 
 > [!TASK]
 >
-> Make it buyable. Clicking it upgrades the player's clicks, switches to the
-> "bought" costume, and shuts itself off so it can't be bought twice.
+> Make it buyable. Clicking it upgrades the player's clicks, switches to the "bought" costume, and shuts itself off so it can't be bought twice.
 >
 > ```blocks3
 > when this sprite clicked
@@ -83,18 +76,13 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 > stop [this script v]
 > ```
 
-Click until you pass 25 pizzas. The cutter appears; click it and every click is now
-worth 2 pizzas.
+Click until you pass 25 pizzas. The cutter appears; click it and every click is now worth 2 pizzas.
 
 > [!TASK]
 >
-> Add two more pieces of equipment. Copy the two cutter scripts by dragging each
-> onto the new sprite in the sprite list, then change the numbers. The pizza shop's
-> rolling pin appears above `499` and sets
-> `pizzas per click`{:class="block3variables"} to `6`:
+> Add two more pieces of equipment. Copy the two cutter scripts by dragging each onto the new sprite in the sprite list, then change the numbers. The pizza shop's rolling pin appears above `499` and sets `pizzas per click`{:class="block3variables"} to `6`:
 >
-> Save [the rolling pin sprite](images/rolling_pin.png) and import it with
-> **Upload** if you want to use the pizza shop's equipment.
+> Save [the rolling pin sprite](images/rolling_pin.png) and import it with **Upload** if you want to use the pizza shop's equipment.
 >
 > > [!NOPRINT]
 > >
@@ -125,20 +113,15 @@ worth 2 pizzas.
 >
 > ![The pizza shop's rolling pin.](images/rolling_pin.png)
 >
-> Add a third the same way: the oven appears above `3000` and sets
-> `pizzas per click`{:class="block3variables"} to `24`. Give each sprite its own
-> first costume in its "appear" script.
+> Add a third the same way: the oven appears above `3000` and sets `pizzas per click`{:class="block3variables"} to `24`. Give each sprite its own first costume in its "appear" script.
 >
-> Save [the oven sprite](images/oven.png) and import it with **Upload** if you want
-> to use the pizza shop's equipment.
+> Save [the oven sprite](images/oven.png) and import it with **Upload** if you want to use the pizza shop's equipment.
 >
 > ![The pizza shop's oven.](images/oven.png)
 
 > [!TASK]
 >
-> Make winning need all the upgrades. On your pizza, update the
-> `wait until`{:class="block3control"} so the player needs a high score **and** all
-> the equipment (which lands `pizzas per click`{:class="block3variables"} on `24`).
+> Make winning need all the upgrades. On your pizza, update the `wait until`{:class="block3control"} so the player needs a high score **and** all the equipment (which lands `pizzas per click`{:class="block3variables"} on `24`).
 >
 > ```blocks3
 > when green flag clicked
@@ -149,5 +132,4 @@ worth 2 pizzas.
 > stop [all v]
 > ```
 
-Buy all three pieces of equipment. The win message now only appears once your shop
-is fully kitted out.
+Buy all three pieces of equipment. The win message now only appears once your shop is fully kitted out.

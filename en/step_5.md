@@ -4,18 +4,15 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TASK]
 >
-> Add another helper sprite. The pizza shop uses a granny, because grannies are
-> pizza pros.
+> Add another helper sprite. The pizza shop uses a granny, because grannies are pizza pros.
 >
-> Use your own helper, or save [the granny sprite](images/granny.png) and import it
-> with **Upload**.
+> Use your own helper, or save [the granny sprite](images/granny.png) and import it with **Upload**.
 >
 > ![The pizza shop's granny.](images/granny.png)
 
 > [!TASK]
 >
-> Copy your chef's two scripts onto the new sprite: drag each script from the code
-> area and drop it onto the new sprite in the sprite list.
+> Copy your chef's two scripts onto the new sprite: drag each script from the code area and drop it onto the new sprite in the sprite list.
 >
 > > [!NOPRINT]
 > >
@@ -23,18 +20,15 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TASK]
 >
-> Make a variable called `grannies`{:class="block3variables"} for how many you've
-> hired.
+> Make a variable called `grannies`{:class="block3variables"} for how many you've hired.
 
 > [!TASK]
 >
-> Make a variable called `granny price`{:class="block3variables"} for how many
-> pizzas the next one costs.
+> Make a variable called `granny price`{:class="block3variables"} for how many pizzas the next one costs.
 
 > [!TASK]
 >
-> In the copied buy script, swap the chef variables for the granny ones and pick a
-> different sound.
+> In the copied buy script, swap the chef variables for the granny ones and pick a different sound.
 >
 > ```blocks3
 > when this sprite clicked
@@ -63,8 +57,7 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TASK]
 >
-> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update
-> the `update pizzas per second`{:class="block3custom"} definition.
+> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
 >
 > ```blocks3
 > define update pizzas per second
@@ -73,8 +66,7 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TASK]
 >
-> Give the new variables their starting values on the Stage's green flag. A granny
-> starts at `100` pizzas, pricier than a chef because she works harder.
+> Give the new variables their starting values on the Stage's green flag. A granny starts at `100` pizzas, pricier than a chef because she works harder.
 >
 > ```blocks3
 > when green flag clicked
@@ -91,5 +83,4 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > end
 > ```
 
-Buy chefs, then save for a granny and watch your pizzas-per-second jump. You now
-have a full endless clicker: clicks, upgrades, and helpers all working together.
+Buy chefs, then save for a granny and watch your pizzas-per-second jump. You now have a full endless clicker: clicks, upgrades, and helpers all working together.
