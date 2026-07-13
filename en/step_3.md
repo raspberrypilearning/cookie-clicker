@@ -6,6 +6,10 @@ Add equipment the player can unlock to make every click worth more.
 >
 > Make a variable called `pizzas per click`{:class="block3variables"}. This is how many pizzas one click makes.
 
+> [!TIP]
+>
+> All the changing information a game remembers, like scores, prices, and upgrades, is called the **game state**.
+
 > [!TASK]
 >
 > Click the `Stage`{:class="block3looks"} and set it to `1` on the green flag, so a click always makes at least one pizza.
@@ -62,6 +66,10 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 > end
 > end
 > ```
+
+> [!TIP]
+>
+> An **unlock condition** is a rule that makes something available only after the player has done enough.
 
 > [!TASK]
 >

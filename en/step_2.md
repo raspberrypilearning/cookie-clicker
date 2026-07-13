@@ -49,6 +49,10 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 > change [pizzas v] by (1)
 > ```
 
+> [!TIP]
+>
+> Code that starts something and then keeps going is called **non-blocking** because it does not pause the rest of the program.
+
 > [!TASK]
 >
 > Make the sprite bounce a little when clicked.
@@ -73,7 +77,7 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> Add the win to the same script. It waits until the score is high enough, then celebrates.
+> Add the **win condition** to the same script. It waits until the score is high enough, then celebrates.
 >
 > ```blocks3
 > when green flag clicked
@@ -83,6 +87,10 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 > +say [You Win!] for (2) seconds
 > +stop [all v]
 > ```
+
+> [!TIP]
+>
+> A **win condition** is the rule that decides when a player has completed or won a game.
 
 > [!TASK]
 >
