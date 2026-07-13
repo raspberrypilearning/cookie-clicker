@@ -4,8 +4,10 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Delete the cat sprite. Add your own sprite with **Choose a Sprite** (library,
+> Delete the cat sprite. Add your own with **Choose a Sprite** (library,
 > **Upload**, or **Paint**). The pizza shop uses a pizza.
+>
+> ![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
 
 > [!TASK]
 >
@@ -14,30 +16,62 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Add this to your sprite so clicking it makes a pizza.
+> Make your sprite clickable, so each click makes a pizza.
 >
 > ```blocks3
 > when this sprite clicked
-> start sound (Tennis Hit v)
 > change [pizzas v] by (1)
-> change size by (10)
-> wait (0.05) seconds
-> change size by (-10)
 > ```
 
 Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> Set the win threshold. Add this script so the player wins at `10000` pizzas.
+> Add a sound so a click feels good. Open the **Sounds** tab, click the speaker
+> icon, and pick something short. Then add it to the top of your script.
+>
+> ![The Sounds tab at the top-left of the editor.](images/sounds_tab.png)
+>
+> ```blocks3
+> when this sprite clicked
+> +start sound (Tennis Hit v)
+> change [pizzas v] by (1)
+> ```
+
+> [!TASK]
+>
+> Make the sprite bounce a little when clicked.
+>
+> ```blocks3
+> when this sprite clicked
+> start sound (Tennis Hit v)
+> change [pizzas v] by (1)
+> +change size by (10)
+> +wait (0.05) seconds
+> +change size by (-10)
+> ```
+
+> [!TASK]
+>
+> Start a new script. On the green flag, stop the sprite being dragged around.
 >
 > ```blocks3
 > when green flag clicked
 > set drag mode [not draggable v]
-> wait until <(pizzas) > (10000)>
-> start sound (Win v)
-> say [You Win!] for (2) seconds
-> stop [all v]
+> ```
+
+> [!TASK]
+>
+> Add the win to the same script. It waits until the score is high enough, then
+> celebrates.
+>
+> ```blocks3
+> when green flag clicked
+> set drag mode [not draggable v]
+> +wait until <(pizzas) > (10000)>
+> +start sound (Win v)
+> +say [You Win!] for (2) seconds
+> +stop [all v]
 > ```
 
 > [!TASK]
