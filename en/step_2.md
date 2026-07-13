@@ -4,7 +4,7 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Delete the cat sprite. You won't need it.
+> Delete the cat sprite.
 
 > [!TASK]
 >
