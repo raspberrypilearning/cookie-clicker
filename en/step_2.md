@@ -4,8 +4,12 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Delete the cat sprite. Add your own with **Choose a Sprite** (library,
-> **Upload**, or **Paint**). The pizza shop uses a pizza.
+> Delete the cat sprite. You won't need it.
+
+> [!TASK]
+>
+> Add your own sprite with **Choose a Sprite** (library, **Upload**, or
+> **Paint**). The pizza shop uses a pizza.
 >
 > ![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
 
@@ -53,7 +57,9 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> Start a new script. On the green flag, stop the sprite being dragged around.
+> Start a new script. On the green flag, set the sprite to
+> `not draggable`{:class="block3sensing"} so the player clicks it instead of
+> accidentally dragging it around the stage.
 >
 > ```blocks3
 > when green flag clicked
