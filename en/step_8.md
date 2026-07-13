@@ -9,26 +9,14 @@ Give your helpers a gentle pulse so they look busy at work.
 > ```blocks3
 > when green flag clicked
 > forever
-> change size by (2)
-> wait (0.05) seconds
-> change size by (2)
-> wait (0.05) seconds
-> change size by (2)
-> wait (0.05) seconds
-> change size by (2)
-> wait (0.05) seconds
-> change size by (2)
+> repeat (5)
+>   change size by (2)
+>   wait (0.05) seconds
+> end
+> repeat (5) times
 > wait (0.05) seconds
 > change size by (-2)
-> wait (0.05) seconds
-> change size by (-2)
-> wait (0.05) seconds
-> change size by (-2)
-> wait (0.05) seconds
-> change size by (-2)
-> wait (0.05) seconds
-> change size by (-2)
-> wait (0.05) seconds
+> end
 > end
 > ```
 
