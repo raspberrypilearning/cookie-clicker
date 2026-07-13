@@ -9,12 +9,12 @@ numbers climb faster and faster.
 > [!NOPRINT]
 >
 > <div class="scratch-preview">
->  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
+>  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1361881665/?autostart=false" frameborder="0"></iframe>
 > </div>
 
-<!-- TODO (author): add a print-only screenshot of the finished game as
-images/finished-project.png, then add a PRINTONLY block with an image tag
-pointing at it (alt text: the pizza, counter, and helpers around the edge). -->
+> [!PRINTONLY]
+>
+> ![The finished pizza shop: readouts top-left, chef and granny on the right, and equipment along the bottom.](images/finished-project.png)
 
 
 Play the example to see where you're heading. Yours doesn't have to look the same:
@@ -25,5 +25,4 @@ you go.
 
 - The Scratch editor, either [online](https://scratch.mit.edu/projects/editor/)
   or the offline app
-- The starter project (open it and click **Remix**, or keep your own blank
-  project)
+- A new Scratch project (the one that opens with the cat is fine)

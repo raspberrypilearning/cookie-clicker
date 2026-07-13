@@ -13,10 +13,10 @@ steps:
   - title: Add equipment
   - title: Add auto-clickers
   - title: Add a second helper
-  - title: Add a backdrop
-  - title: Animate the equipment
     completion:
       - internal
-  - title: Animate the auto-clickers
+  - title: Add a backdrop
     completion:
       - external
+  - title: Animate the equipment
+  - title: Animate the auto-clickers
