@@ -13,6 +13,11 @@ Add something to click and a score that goes up when you click it.
 > Add your own sprite with **Choose a Sprite** (library, **Upload**, or
 > **Paint**). The pizza shop uses a pizza.
 >
+> Use your own sprite, or save [the pizza sprite](images/pizza.png) and import it
+> with **Upload**.
+>
+> ![The pizza shop's pizza sprite.](images/pizza.png)
+>
 > ![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
 
 > [!TASK]

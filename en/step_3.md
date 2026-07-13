@@ -38,6 +38,9 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 >
 > Add your first piece of equipment as a new sprite. The pizza shop uses a cutter.
 >
+> Use your own equipment, or save [the cutter sprite](images/cutter.png) and
+> import it with **Upload**.
+>
 > ![The pizza shop's cutter.](images/cutter.png)
 
 > [!TASK]
@@ -90,6 +93,9 @@ worth 2 pizzas.
 > rolling pin appears above `499` and sets
 > `pizzas per click`{:class="block3variables"} to `6`:
 >
+> Save [the rolling pin sprite](images/rolling_pin.png) and import it with
+> **Upload** if you want to use the pizza shop's equipment.
+>
 > > [!NOPRINT]
 > >
 > > ![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
@@ -122,6 +128,9 @@ worth 2 pizzas.
 > Add a third the same way: the oven appears above `3000` and sets
 > `pizzas per click`{:class="block3variables"} to `24`. Give each sprite its own
 > first costume in its "appear" script.
+>
+> Save [the oven sprite](images/oven.png) and import it with **Upload** if you want
+> to use the pizza shop's equipment.
 >
 > ![The pizza shop's oven.](images/oven.png)
 

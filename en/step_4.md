@@ -6,6 +6,9 @@ Add a helper that makes pizzas for you every second, even when you stop clicking
 >
 > Add a helper sprite. The pizza shop uses a robot chef.
 >
+> Use your own helper, or save [the chef sprite](images/chef.png) and import it
+> with **Upload**.
+>
 > ![The pizza shop's robot chef.](images/chef.png)
 
 > [!TASK]

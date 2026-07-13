@@ -7,6 +7,9 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > Add another helper sprite. The pizza shop uses a granny, because grannies are
 > pizza pros.
 >
+> Use your own helper, or save [the granny sprite](images/granny.png) and import it
+> with **Upload**.
+>
 > ![The pizza shop's granny.](images/granny.png)
 
 > [!TASK]
