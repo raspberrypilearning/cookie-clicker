@@ -5,6 +5,8 @@ Add something to click and a score that goes up when you click it.
 > [!TASK]
 >
 > Delete the cat sprite.
+>
+> ![Deleting a sprite with the bin icon on its thumbnail.](images/delete-sprite.png)
 
 > [!TASK]
 >
@@ -17,6 +19,10 @@ Add something to click and a score that goes up when you click it.
 >
 > Make a variable called `pizzas`{:class="block3variables"} and tick it so the
 > player can see their score.
+>
+> ![The Make a Variable button in the Variables palette.](images/make-a-variable.png)
+>
+> ![A ticked variable checkbox showing the value on the stage.](images/variable-checkbox.png)
 
 > [!TASK]
 >
@@ -83,6 +89,8 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 > [!TASK]
 >
 > Click the `Stage`{:class="block3looks"} and reset the score on the green flag.
+>
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
 > ```blocks3
 > when green flag clicked

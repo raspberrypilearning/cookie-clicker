@@ -1,26 +1,56 @@
 ## Add equipment
 
-Clicking one pizza at a time is slow. In this step, you'll add **equipment** the
-player can unlock to make every click worth more. In the pizza shop that's a pizza
-cutter, a rolling pin, and an oven, but you can pick whatever suits your game.
-
-Each piece of equipment changes `pizzas per click`{:class="block3variables"}, appears
-only once the player has enough pizzas, and can be bought once.
+Add equipment the player can unlock to make every click worth more.
 
 > [!TASK]
 >
-> Add your first piece of equipment as a new sprite (**Choose a Sprite** →
-> library, **Upload**, or **Paint**). The pizza shop uses a `cutter`.
->
-> Then give it a second costume that shows it's been bought. Click the **Costumes**
-> tab, right-click your costume and choose **duplicate**, then change the copy: the
-> pizza shop adds a big green tick. You could add a cross, grey it out, or recolour
-> it. Make sure the plain costume is first and the "bought" one is second.
+> Make a variable called `pizzas per click`{:class="block3variables"}. This is how
+> many pizzas one click makes.
 
 > [!TASK]
 >
-> Add this script so the cutter only appears once the player can afford it. The
-> `start sound`{:class="block3sound"} gives an "it's ready!" nudge.
+> Click the `Stage`{:class="block3looks"} and set it to `1` on the green flag, so a
+> click always makes at least one pizza.
+>
+> ```blocks3
+> when green flag clicked
+> set [pizzas v] to (0)
+> +set [pizzas per click v] to (1)
+> ```
+
+> [!TASK]
+>
+> On your pizza sprite, make each click use the variable instead of a fixed `1`.
+>
+> ```blocks3
+> when this sprite clicked
+> start sound (Tennis Hit v)
+> +change [pizzas v] by (pizzas per click)
+> change size by (10)
+> wait (0.05) seconds
+> change size by (-10)
+> ```
+
+Nothing changes yet, because `pizzas per click`{:class="block3variables"} is still
+`1`. The equipment will raise it.
+
+> [!TASK]
+>
+> Add your first piece of equipment as a new sprite. The pizza shop uses a cutter.
+>
+> ![The pizza shop's cutter.](images/cutter.png)
+
+> [!TASK]
+>
+> Give it a second costume that shows it's been bought: in the **Costumes** tab,
+> right-click the costume and choose **duplicate**, then change the copy (the pizza
+> shop adds a green tick). Keep the plain costume first and the "bought" one second.
+>
+> ![Right-clicking a costume to duplicate it in the Costumes tab.](images/duplicate-costume.png)
+
+> [!TASK]
+>
+> Make the equipment appear only once the player can afford it.
 >
 > ```blocks3
 > when green flag clicked
@@ -35,15 +65,11 @@ only once the player has enough pizzas, and can be bought once.
 > end
 > end
 > ```
->
-> `25` is the pizza shop's unlock number. Pick your own, and switch to your first
-> costume's name instead of `cutter`.
 
 > [!TASK]
 >
-> Now add the buy script. When the player clicks the cutter it upgrades their
-> clicks, switches to the "bought" costume, and shuts itself off so it can't be
-> bought again.
+> Make it buyable. Clicking it upgrades the player's clicks, switches to the
+> "bought" costume, and shuts itself off so it can't be bought twice.
 >
 > ```blocks3
 > when this sprite clicked
@@ -54,24 +80,19 @@ only once the player has enough pizzas, and can be bought once.
 > stop [this script v]
 > ```
 
-> [!TIP]
->
-> The unlock number is a threshold, not a cost: the cutter appears when the player
-> has more than `25` pizzas, and buying it doesn't spend them. The helpers you add
-> later *will* cost pizzas.
-
-Click the green flag and click until you pass 25 pizzas. The cutter appears; click
-it and every click is now worth 2 pizzas.
+Click until you pass 25 pizzas. The cutter appears; click it and every click is now
+worth 2 pizzas.
 
 > [!TASK]
 >
-> Add two more pieces of equipment the same way. The quickest route: for each new
-> sprite, drag your two cutter scripts from the code area onto the new sprite in the
-> sprite list to copy them, then change the numbers.
->
-> Use bigger unlock numbers and bigger upgrades each time so equipment stays worth
-> saving for. The pizza shop's rolling pin appears above `499` pizzas and sets
+> Add two more pieces of equipment. Copy the two cutter scripts by dragging each
+> onto the new sprite in the sprite list, then change the numbers. The pizza shop's
+> rolling pin appears above `499` and sets
 > `pizzas per click`{:class="block3variables"} to `6`:
+>
+> > [!NOPRINT]
+> >
+> > ![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
 >
 > ```blocks3
 > when green flag clicked
@@ -96,16 +117,19 @@ it and every click is now worth 2 pizzas.
 > stop [this script v]
 > ```
 >
-> Then add a third piece the same way — the pizza shop's oven appears above `3000`
-> pizzas and sets `pizzas per click`{:class="block3variables"} to `24`. Remember to
-> switch each sprite to its own first costume near the top of its "appear" script.
+> ![The pizza shop's rolling pin.](images/rolling_pin.png)
+>
+> Add a third the same way: the oven appears above `3000` and sets
+> `pizzas per click`{:class="block3variables"} to `24`. Give each sprite its own
+> first costume in its "appear" script.
+>
+> ![The pizza shop's oven.](images/oven.png)
 
 > [!TASK]
 >
-> Now make winning depend on buying everything. Click your pizza sprite and update
-> the `wait until`{:class="block3control"} in its win script so the player needs a
-> high score **and** all the upgrades (which lands
-> `pizzas per click`{:class="block3variables"} on `24`).
+> Make winning need all the upgrades. On your pizza, update the
+> `wait until`{:class="block3control"} so the player needs a high score **and** all
+> the equipment (which lands `pizzas per click`{:class="block3variables"} on `24`).
 >
 > ```blocks3
 > when green flag clicked
@@ -115,9 +139,6 @@ it and every click is now worth 2 pizzas.
 > say [You Win!] for (2) seconds
 > stop [all v]
 > ```
->
-> If you chose different upgrade values, use your own final
-> `pizzas per click`{:class="block3variables"} number here.
 
-Click the green flag. Buy all three pieces of equipment and keep clicking — now the
-win message only appears once you've kitted out your whole shop.
+Buy all three pieces of equipment. The win message now only appears once your shop
+is fully kitted out.

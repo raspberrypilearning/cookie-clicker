@@ -1,32 +1,32 @@
 ## Add auto-clickers
 
-Real clicker games keep making things even when you stop clicking. In this step
-you'll add a **helper** that makes pizzas for you every second. The pizza shop
-hires chefs, but yours could be robots, workers, or magic ovens.
+Add a helper that makes pizzas for you every second, even when you stop clicking.
 
 > [!TASK]
 >
-> Add a helper sprite (**Choose a Sprite** → library, **Upload**, or **Paint**).
-> The pizza shop uses a robot chef.
+> Add a helper sprite. The pizza shop uses a robot chef.
+>
+> ![The pizza shop's robot chef.](images/chef.png)
 
 > [!TASK]
 >
-> Make three new variables:
->
-> - `chefs`{:class="block3variables"} — how many helpers you've hired.
-> - `chef price`{:class="block3variables"} — how many pizzas the next helper costs.
->   This one climbs each time you buy, so helpers get pricier.
-> - `pizzas per second`{:class="block3variables"} — how many pizzas your helpers make
->   each second.
->
-> Tick `chefs`{:class="block3variables"} and
-> `pizzas per second`{:class="block3variables"} so the player can watch them; you
-> can hide `chef price`{:class="block3variables"} or show it, your choice.
+> Make a variable called `chefs`{:class="block3variables"} for how many helpers
+> you've hired, and tick it so the player can see it.
 
 > [!TASK]
 >
-> Add this buy script to your helper. It spends pizzas, hires one helper, then
-> raises the price for next time.
+> Make a variable called `chef price`{:class="block3variables"} for how many pizzas
+> the next helper costs. This climbs each time, so helpers get pricier.
+
+> [!TASK]
+>
+> Make a variable called `pizzas per second`{:class="block3variables"} for how many
+> pizzas your helpers make each second, and tick it.
+
+> [!TASK]
+>
+> Make the helper buyable. Clicking it spends pizzas, hires one helper, and raises
+> the price for next time.
 >
 > ```blocks3
 > when this sprite clicked
@@ -36,16 +36,13 @@ hires chefs, but yours could be robots, workers, or magic ovens.
 > set [chef price v] to (round ((chef price) * (1.15)))
 > ```
 
-> [!INFO]
->
-> Multiplying the price by `1.15` and rounding it makes each helper cost about 15%
-> more than the last. That steady climb is what stops the player buying everything
-> at once, and it's the trick at the heart of every endless clicker.
+Multiplying the price by `1.15` makes each helper cost about 15% more than the
+last. That steady climb is the trick behind every endless clicker.
 
 > [!TASK]
 >
-> Add a second script so the helper only shows when the player can afford it, and
-> tells the rest of the game to recount the pizzas-per-second.
+> Make the helper appear only when affordable, and tell the game to recount the
+> pizzas-per-second.
 >
 > ```blocks3
 > when green flag clicked
@@ -62,16 +59,20 @@ hires chefs, but yours could be robots, workers, or magic ovens.
 
 > [!TASK]
 >
-> Now teach the `Stage`{:class="block3looks"} to run the game's clock. First make a
-> custom block: in the `My Blocks`{:class="block3custom"} palette click **Make a
-> Block**, name it `update pizzas per second`, and build its definition.
+> Click the `Stage`{:class="block3looks"}. In `My Blocks`{:class="block3custom"}
+> click **Make a Block**, name it `update pizzas per second`, and build its
+> definition.
+>
+> ![The Make a Block button in the My Blocks palette.](images/make-a-block.png)
 >
 > ```blocks3
 > define update pizzas per second
 > set [pizzas per second v] to ((chefs) * (1))
 > ```
+
+> [!TASK]
 >
-> Then add a script so any helper can ask for a recount.
+> Still on the Stage, add a script so any helper can ask for a recount.
 >
 > ```blocks3
 > when I receive (update v)
@@ -80,9 +81,8 @@ hires chefs, but yours could be robots, workers, or magic ovens.
 
 > [!TASK]
 >
-> Finally, update the Stage's green flag script. It sets the new variables to their
-> starting values, works out the rate once, then adds your pizzas-per-second every
-> second, forever.
+> Update the Stage's green flag script to start the game's clock: set the new
+> variables, work out the rate once, then add the pizzas-per-second every second.
 >
 > ```blocks3
 > when green flag clicked
@@ -97,5 +97,5 @@ hires chefs, but yours could be robots, workers, or magic ovens.
 > end
 > ```
 
-Click the green flag and click until you can afford a chef. Buy one, then stop
-clicking: your `pizzas`{:class="block3variables"} keep rising on their own.
+Buy a helper, then stop clicking. Your `pizzas`{:class="block3variables"} keep
+rising on their own.

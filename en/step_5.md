@@ -1,29 +1,37 @@
 ## Add a second helper
 
-One helper is good; two is better. In this step you'll add a second, more powerful
-helper that makes more pizzas per second than the first. The pizza shop hires
-grannies, because grannies are pizza pros.
+Add a second, more powerful helper that makes more pizzas per second than the first.
 
 > [!TASK]
 >
-> Add another helper sprite. The pizza shop uses a granny, but pick whatever fits
-> your game.
+> Add another helper sprite. The pizza shop uses a granny, because grannies are
+> pizza pros.
+>
+> ![The pizza shop's granny.](images/granny.png)
 
 > [!TASK]
 >
 > Copy your chef's two scripts onto the new sprite: drag each script from the code
-> area and drop it onto the new sprite in the sprite list. This copies them so you
-> don't have to rebuild every block.
+> area and drop it onto the new sprite in the sprite list.
+>
+> > [!NOPRINT]
+> >
+> > ![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
 
 > [!TASK]
 >
-> Make two new variables for this helper:
+> Make a variable called `grannies`{:class="block3variables"} for how many you've
+> hired.
+
+> [!TASK]
 >
-> - `grannies`{:class="block3variables"} — how many you've hired.
-> - `granny price`{:class="block3variables"} — how many pizzas the next one costs.
+> Make a variable called `granny price`{:class="block3variables"} for how many
+> pizzas the next one costs.
+
+> [!TASK]
 >
-> Then, in the copied scripts, swap the chef variables for the granny ones and pick
-> a different sound. Your buy script should look like this:
+> In the copied buy script, swap the chef variables for the granny ones and pick a
+> different sound.
 >
 > ```blocks3
 > when this sprite clicked
@@ -32,8 +40,10 @@ grannies, because grannies are pizza pros.
 > change [grannies v] by (1)
 > set [granny price v] to (round ((granny price) * (1.15)))
 > ```
+
+> [!TASK]
 >
-> And your appear script like this:
+> Swap the variables in the copied appear script too.
 >
 > ```blocks3
 > when green flag clicked
@@ -50,9 +60,8 @@ grannies, because grannies are pizza pros.
 
 > [!TASK]
 >
-> Now make grannies actually worth it. On the `Stage`{:class="block3looks"}, update
-> the `update pizzas per second`{:class="block3custom"} definition so each granny
-> adds `5` pizzas a second on top of what your chefs make.
+> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update
+> the `update pizzas per second`{:class="block3custom"} definition.
 >
 > ```blocks3
 > define update pizzas per second
@@ -61,9 +70,8 @@ grannies, because grannies are pizza pros.
 
 > [!TASK]
 >
-> Then give the two new variables their starting values in the Stage's green flag
-> script. A granny starts at `100` pizzas — pricier than a chef, because she works
-> harder.
+> Give the new variables their starting values on the Stage's green flag. A granny
+> starts at `100` pizzas, pricier than a chef because she works harder.
 >
 > ```blocks3
 > when green flag clicked
@@ -80,8 +88,7 @@ grannies, because grannies are pizza pros.
 > end
 > ```
 
-Click the green flag and play for real. Buy chefs, then save for a granny and watch
-your pizzas-per-second jump. You now have a full endless clicker: clicks, upgrades,
-and helpers all working together.
+Buy chefs, then save for a granny and watch your pizzas-per-second jump. You now
+have a full endless clicker: clicks, upgrades, and helpers all working together.
 
 > [!SAVE]
