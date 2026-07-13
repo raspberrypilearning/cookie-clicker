@@ -13,9 +13,10 @@ steps:
   - title: Add equipment
   - title: Add auto-clickers
   - title: Add a second helper
+  - title: Add a backdrop
+  - title: Animate the equipment
     completion:
       - internal
-  - title: Bring your shop to life
-    challenge: true
+  - title: Animate the auto-clickers
     completion:
       - external

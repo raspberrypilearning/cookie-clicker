@@ -90,5 +90,3 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 Buy chefs, then save for a granny and watch your pizzas-per-second jump. You now
 have a full endless clicker: clicks, upgrades, and helpers all working together.
-
-> [!SAVE]
