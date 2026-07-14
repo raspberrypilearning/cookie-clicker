@@ -37,7 +37,7 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > start sound (Collect v)
 > change [pizzas v] by ((0) - (granny price))
 > change [grannies v] by (1)
-> set [granny price v] to (round ((granny price) * (1.15)))
+> +set [granny price v] to (round ((granny price) * (1.15)))
 > ```
 
 > [!TASK]
@@ -50,7 +50,7 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > when green flag clicked
 > set drag mode [not draggable v]
 > forever
-> if <(pizzas) > ((granny price) - (1))> then
+> +if <(pizzas) > ((granny price) - (1))> then
 > show
 > else
 > hide
