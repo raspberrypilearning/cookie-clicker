@@ -1,4 +1,4 @@
-name: "Project title starter"
-identifier: "project-name-starter"
-type: 'python'
-build: false
+name: "Pizza Shop starter"
+identifier: "cookie-clicker-clone-starter"
+type: 'scratch'
+build: true
