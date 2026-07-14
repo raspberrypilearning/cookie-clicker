@@ -1,14 +1,22 @@
-title: Project title in sentence case
+title: Pizza Party
 hero_image: images/banner.png
-description: A short description of the project
+description: >-
+  Build your own endless clicker game. Click to make pizzas, buy equipment so
+  every click is worth more, and hire helpers who keep cooking for you.
 listed: false
 pdf: false
 steps:
   - title: What you will make
-  - title: Step title
+  - title: Make the clicker
     completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
+      - engaged
+  - title: Add equipment
+  - title: Add auto-clickers
+  - title: Add a second helper
+    completion:
+      - internal
+  - title: Add a backdrop
     completion:
       - external
+  - title: Animate the equipment
+  - title: Animate the auto-clickers

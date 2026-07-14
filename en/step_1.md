@@ -1,45 +1,27 @@
+## Start Scratch
+
+> [!TASK]
+>
+> Open a [fresh Scratch project](https://scratch.mit.edu/projects/editor/){:target="_blank"} in a new tab. The project that opens with the Scratch cat is the right starting point.
+
 ## What you will make
-OR
-## What you will do - change meta if you use this
 
-A brief description - one or two sentences. 
+You're going to build a **pizza clicker**: a game where you tap a pizza to make more pizzas, spend those pizzas on shiny equipment so every click is worth more, and hire helpers who keep cooking even when you take a break. Games like this are called **idle** or **endless clicker** games, and the fun comes from watching your numbers climb faster and faster.
 
---- print-only ---
+> [!NOPRINT]
+>
+> <div class="scratch-preview">
+>  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1361881665/?autostart=false" frameborder="0"></iframe>
+> </div>
 
-![ALT TEXT](images/IMAGE.png)
+> [!PRINTONLY]
+>
+> ![The finished pizza shop: readouts top-left, chef and granny on the right, and equipment along the bottom.](images/finished-project.png)
 
---- /print-only ---
 
---- no-print ---
-
-[Editor embed](https://editor.raspberrypi.org/en/embed/viewer/project-slug)
-
---- /no-print ---
-
---- no-print ---
-
-Video embed
-
-<video width="640" height="360" controls>
-<source src="images/videoname.mp4" type="video/mp4">
-</video>
-
-Youtube embed 
-<html>
-<div style="position: relative; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/XXXXXXXXX?rel=0&cc_load_policy=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
-</div><br>
-</html>
-
-Scratch embed
-<div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
-</div>
-
---- /no-print ---
+Play the example to see where you're heading. Yours doesn't have to look the same: you'll choose your own thing to click, your own equipment, and your own helpers as you go.
 
 ### You will need:
-- a
-- b
-- c
+
+- The Scratch editor
+- A new Scratch project
