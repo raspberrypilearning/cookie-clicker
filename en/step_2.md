@@ -30,6 +30,8 @@ Add something to click and a score that goes up when you click it.
 >
 > Make your sprite clickable, so each click makes a pizza.
 >
+> <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
 > ```blocks3
 > when this sprite clicked
 > change [pizzas v] by (1)
@@ -59,6 +61,8 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 >
 > Make the sprite bounce a little when clicked.
 >
+> <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
 > ```blocks3
 > when this sprite clicked
 > start sound (Tennis Hit v)
@@ -71,6 +75,8 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 > [!TASK]
 >
 > Start a new script. On the green flag, set the sprite to `not draggable`{:class="block3sensing"} so the player clicks it instead of accidentally dragging it around the stage.
+>
+> <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when green flag clicked

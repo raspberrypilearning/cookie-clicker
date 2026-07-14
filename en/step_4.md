@@ -8,7 +8,7 @@ Add a helper that makes pizzas for you every second, even when you stop clicking
 >
 > Use your own helper, or save [the chef sprite](images/chef.png) and import it with **Upload**.
 >
-> ![The pizza shop's robot chef.](images/chef.png)
+> <img src="images/chef.png" alt="The pizza shop's robot chef." width="150" height="150" style="object-fit: contain;">
 
 > [!TASK]
 >
@@ -25,6 +25,8 @@ Add a helper that makes pizzas for you every second, even when you stop clicking
 > [!TASK]
 >
 > Make the helper buyable. Clicking it spends pizzas, hires one helper, and raises the price for next time.
+>
+> <p align="center"><img src="images/chef.png" alt="Chef sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when this sprite clicked
@@ -44,6 +46,10 @@ Multiplying the price by `1.15` makes each helper cost about 15% more than the l
 >
 > Make the helper appear only when affordable, and tell the game to recount the pizzas-per-second.
 >
+> In the `broadcast`{:class="block3events"} block, open the message menu, choose **New message**, and name it `update`.
+>
+> <p align="center"><img src="images/chef.png" alt="Chef sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
 > ```blocks3
 > when green flag clicked
 > set drag mode [not draggable v]
@@ -59,7 +65,7 @@ Multiplying the price by `1.15` makes each helper cost about 15% more than the l
 
 > [!TASK]
 >
-> Click the `Stage`{:class="block3looks"}. In `My Blocks`{:class="block3custom"} click **Make a Block**, name it `update pizzas per second`, and build its definition.
+> Click the `Stage`{:class="block3looks"}. In `My Blocks`{:class="block3myblocks"} click **Make a Block**, name it `update pizzas per second`{:class="block3myblocks"}, and build its definition.
 >
 > ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >

@@ -6,6 +6,8 @@ Give your helpers a gentle pulse so they look busy at work.
 >
 > Add this script to your first helper. It grows the sprite a little, then shrinks it back, over and over.
 >
+> <p align="center"><img src="images/chef.png" alt="Chef sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
 > ```blocks3
 > when green flag clicked
 > forever

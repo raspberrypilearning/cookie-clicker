@@ -30,6 +30,8 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 >
 > In the copied buy script, swap the chef variables for the granny ones and pick a different sound.
 >
+> <p align="center"><img src="images/granny.png" alt="Granny sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
 > ```blocks3
 > when this sprite clicked
 > start sound (Collect v)
@@ -41,6 +43,8 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > [!TASK]
 >
 > Swap the variables in the copied appear script too.
+>
+> <p align="center"><img src="images/granny.png" alt="Granny sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when green flag clicked
@@ -57,7 +61,7 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TASK]
 >
-> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
+> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3myblocks"} definition.
 >
 > ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
