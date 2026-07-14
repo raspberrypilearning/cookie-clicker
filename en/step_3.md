@@ -14,6 +14,8 @@ Add equipment the player can unlock to make every click worth more.
 >
 > Click the `Stage`{:class="block3looks"} and set it to `1` on the green flag, so a click always makes at least one pizza.
 >
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
+>
 > ```blocks3
 > when green flag clicked
 > set [pizzas v] to (0)

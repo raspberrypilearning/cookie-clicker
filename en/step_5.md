@@ -59,6 +59,8 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 >
 > Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
 >
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
+>
 > ```blocks3
 > define update pizzas per second
 > +set [pizzas per second v] to (((chefs) * (1)) + ((grannies) * (5)))
@@ -67,6 +69,8 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > [!TASK]
 >
 > Give the new variables their starting values on the Stage's green flag. A granny starts at `100` pizzas, pricier than a chef because she works harder.
+>
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
 > ```blocks3
 > when green flag clicked

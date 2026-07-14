@@ -61,6 +61,8 @@ Multiplying the price by `1.15` makes each helper cost about 15% more than the l
 >
 > Click the `Stage`{:class="block3looks"}. In `My Blocks`{:class="block3custom"} click **Make a Block**, name it `update pizzas per second`, and build its definition.
 >
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
+>
 > ![The Make a Block button in the My Blocks palette.](images/make-a-block.png)
 >
 > ```blocks3
@@ -76,6 +78,8 @@ Multiplying the price by `1.15` makes each helper cost about 15% more than the l
 >
 > Still on the Stage, add a script so any helper can ask for a recount.
 >
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
+>
 > ```blocks3
 > when I receive (update v)
 > update pizzas per second
@@ -84,6 +88,8 @@ Multiplying the price by `1.15` makes each helper cost about 15% more than the l
 > [!TASK]
 >
 > Update the Stage's green flag script to start the game's clock: set the new variables, work out the rate once, then add the pizzas-per-second every second.
+>
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
 > ```blocks3
 > when green flag clicked
