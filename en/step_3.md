@@ -57,6 +57,12 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 
 > [!TASK]
 >
+> Add the `Alert`{:class="block3sound"} sound to your equipment sprite. Open the **Sounds** tab, click the speaker icon, and choose **Alert**.
+>
+> This alert uses `play sound until done`{:class="block3sound"} so the sound finishes before the loop checks again.
+
+> [!TASK]
+>
 > Make the equipment appear only once the player can afford it.
 >
 > The `25` in this script is the cutter's **price**: the player needs more than `25` pizzas before the cutter appears. Use a bigger number to make equipment more expensive.
@@ -69,8 +75,8 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 > switch costume to (cutter v)
 > forever
 > if <(pizzas) > (25)> then
-> start sound (Alert v)
 > show
+> play sound (Alert v) until done
 > else
 > hide
 > end
@@ -104,11 +110,15 @@ Click until you pass 25 pizzas. The cutter appears; click it and every click is 
 >
 > Save [the rolling pin sprite](images/rolling_pin.png) and import it with **Upload** if you want to use the pizza shop's equipment.
 >
-> <p align="center"><img src="images/rolling_pin.png" alt="Rolling pin sprite icon." width="96" height="96" style="object-fit: contain;"></p>
->
 > > [!NOPRINT]
 > >
 > > ![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
+
+> [!TASK]
+>
+> Add the `Alert`{:class="block3sound"} sound to each extra equipment sprite too. Then update the copied scripts for the rolling pin and oven.
+>
+> <p align="center"><img src="images/rolling_pin.png" alt="Rolling pin sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when green flag clicked
@@ -116,8 +126,8 @@ Click until you pass 25 pizzas. The cutter appears; click it and every click is 
 > switch costume to (rolling_pin v)
 > forever
 > if <(pizzas) > (499)> then
-> start sound (Alert v)
 > show
+> play sound (Alert v) until done
 > else
 > hide
 > end
@@ -138,6 +148,22 @@ Click until you pass 25 pizzas. The cutter appears; click it and every click is 
 > Add a third the same way: the oven appears above `3000` and sets `pizzas per click`{:class="block3variables"} to `24`. Give each sprite its own first costume in its "appear" script.
 >
 > Save [the oven sprite](images/oven.png) and import it with **Upload** if you want to use the pizza shop's equipment.
+>
+> <p align="center"><img src="images/oven.png" alt="Oven sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
+> ```blocks3
+> when green flag clicked
+> set drag mode [not draggable v]
+> switch costume to (oven v)
+> forever
+> if <(pizzas) > (3000)> then
+> show
+> play sound (Alert v) until done
+> else
+> hide
+> end
+> end
+> ```
 >
 > ![The pizza shop's oven.](images/oven.png)
 
