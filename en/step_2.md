@@ -4,6 +4,10 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
+> Open a [fresh Scratch project](https://scratch.mit.edu/projects/editor/){:target="_blank"} in a new tab. The project that opens with the Scratch cat is the right starting point.
+
+> [!TASK]
+>
 > Delete the cat sprite.
 >
 > ![Deleting a sprite with the bin icon on its thumbnail.](images/delete-sprite.png)
