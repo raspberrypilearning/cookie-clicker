@@ -26,6 +26,8 @@ Add equipment the player can unlock to make every click worth more.
 >
 > On your pizza sprite, make each click use the variable instead of a fixed `1`.
 >
+> <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
 > ```blocks3
 > when this sprite clicked
 > start sound (Tennis Hit v)
@@ -50,10 +52,16 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 > Give it a second costume that shows it's been bought: in the **Costumes** tab, right-click the costume and choose **duplicate**, then change the copy (the pizza shop adds a green tick). Keep the plain costume first and the "bought" one second.
 >
 > ![Right-clicking a costume to duplicate it in the Costumes tab.](images/duplicate-costume.png)
+>
+> ![The cutter costume with a green tick added.](images/cutter2.png)
 
 > [!TASK]
 >
 > Make the equipment appear only once the player can afford it.
+>
+> The `25` in this script is the cutter's **price**: the player needs more than `25` pizzas before the cutter appears. Use a bigger number to make equipment more expensive.
+>
+> <p align="center"><img src="images/cutter.png" alt="Cutter sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when green flag clicked
@@ -77,6 +85,8 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 >
 > Make it buyable. Clicking it upgrades the player's clicks, switches to the "bought" costume, and shuts itself off so it can't be bought twice.
 >
+> <p align="center"><img src="images/cutter.png" alt="Cutter sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+>
 > ```blocks3
 > when this sprite clicked
 > start sound (Tada v)
@@ -93,6 +103,8 @@ Click until you pass 25 pizzas. The cutter appears; click it and every click is 
 > Add two more pieces of equipment. Copy the two cutter scripts by dragging each onto the new sprite in the sprite list, then change the numbers. The pizza shop's rolling pin appears above `499` and sets `pizzas per click`{:class="block3variables"} to `6`:
 >
 > Save [the rolling pin sprite](images/rolling_pin.png) and import it with **Upload** if you want to use the pizza shop's equipment.
+>
+> <p align="center"><img src="images/rolling_pin.png" alt="Rolling pin sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > > [!NOPRINT]
 > >
@@ -132,6 +144,8 @@ Click until you pass 25 pizzas. The cutter appears; click it and every click is 
 > [!TASK]
 >
 > Make winning need all the upgrades. On your pizza, update the `wait until`{:class="block3control"} so the player needs a high score **and** all the equipment (which lands `pizzas per click`{:class="block3variables"} on `24`).
+>
+> <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when green flag clicked
