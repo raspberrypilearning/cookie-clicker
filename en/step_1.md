@@ -1,9 +1,3 @@
-## Start Scratch
-
-> [!TASK]
->
-> Open a [fresh Scratch project](https://scratch.mit.edu/projects/editor/){:target="_blank"} in a new tab. The project that opens with the Scratch cat is the right starting point.
-
 ## What you will make
 
 You're going to build a **pizza clicker**: a game where you tap a pizza to make more pizzas, spend those pizzas on shiny equipment so every click is worth more, and hire helpers who keep cooking even when you take a break. Games like this are called **idle** or **endless clicker** games, and the fun comes from watching your numbers climb faster and faster.
