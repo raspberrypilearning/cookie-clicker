@@ -1,56 +1,60 @@
-## Add a second helper
+## Add auto-clickers
 
-Add a second, more powerful helper that makes more pizzas per second than the first.
-
-> [!TASK]
->
-> Add another helper sprite. The pizza shop uses a granny, because grannies are pizza pros.
->
-> Use your own helper, or save [the granny sprite](images/granny.png) and import it with **Upload**.
->
-> ![The pizza shop's granny.](images/granny.png)
+Add a helper that makes pizzas for you every second, even when you stop clicking.
 
 > [!TASK]
 >
-> Copy your chef's two scripts onto the new sprite: drag each script from the code area and drop it onto the new sprite in the sprite list.
+> Add a helper sprite. The pizza shop uses a robot chef.
 >
-> > [!NOPRINT]
-> >
-> > ![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
+> Use your own helper, or save [the chef sprite](images/chef.png) and import it with **Upload**.
+>
+> <img src="images/chef.png" alt="The pizza shop's robot chef." width="150" height="150" style="object-fit: contain;">
 
 > [!TASK]
 >
-> Make a variable called `grannies`{:class="block3variables"} for how many you've hired.
+> Make a variable called `chefs`{:class="block3variables"} for how many helpers you've hired, and tick it so the player can see it.
 
 > [!TASK]
 >
-> Make a variable called `granny price`{:class="block3variables"} for how many pizzas the next one costs.
+> Make a variable called `chef price`{:class="block3variables"} for how many pizzas the next helper costs. This climbs each time, so helpers get pricier.
 
 > [!TASK]
 >
-> In the copied buy script, swap the chef variables for the granny ones and pick a different sound.
+> Make a variable called `pizzas per second`{:class="block3variables"} for how many pizzas your helpers make each second, and tick it.
+
+> [!TASK]
 >
-> <p align="center"><img src="images/granny.png" alt="Granny sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+> Make the helper buyable. Clicking it spends pizzas, hires one helper, and raises the price for next time.
+>
+> <p align="center"><img src="images/chef.png" alt="Chef sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when this sprite clicked
-> start sound (Collect v)
-> change [pizzas v] by ((0) - (granny price))
-> change [grannies v] by (1)
-> +set [granny price v] to (round ((granny price) * (1.15)))
+> start sound (Clang v)
+> change [pizzas v] by ((0) - (chef price))
+> change [chefs v] by (1)
+> set [chef price v] to (round ((chef price) * (1.15)))
 > ```
+
+Multiplying the price by `1.15` makes each helper cost about 15% more than the last. That steady climb is the trick behind every endless clicker.
+
+> [!TIP]
+>
+> A **progression curve** controls how quickly a game gets harder, faster, or more expensive as the player improves.
 
 > [!TASK]
 >
-> Swap the variables in the copied appear script too.
+> Make the helper appear only when affordable, and tell the game to recount the pizzas-per-second.
 >
-> <p align="center"><img src="images/granny.png" alt="Granny sprite icon." width="96" height="96" style="object-fit: contain;"></p>
+> In the `broadcast`{:class="block3events"} block, open the message menu, choose **New message**, and name it `update`.
+>
+> <p align="center"><img src="images/chef.png" alt="Chef sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when green flag clicked
 > set drag mode [not draggable v]
 > forever
-> +if <(pizzas) > ((granny price) - (1))> then
+> if <(pizzas) > ((chef price) - (1))> then
 > show
 > else
 > hide
@@ -61,18 +65,35 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TASK]
 >
-> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
+> Click the `Stage`{:class="block3looks"}. In `My Blocks`{:class="block3custom"} click **Make a Block**, name it `update pizzas per second`{:class="block3custom"}, and build its definition.
+>
+> ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
+>
+> ![The Make a Block button in the My Blocks palette.](images/make-a-block.png)
+>
+> ```blocks3
+> define update pizzas per second
+> set [pizzas per second v] to ((chefs) * (1))
+> ```
+
+> [!TIP]
+>
+> In many programming languages, a reusable block of code like this is called a **function**.
+
+> [!TASK]
+>
+> Still on the Stage, add a script so any helper can ask for a recount.
 >
 > ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
 > ```blocks3
-> define update pizzas per second
-> +set [pizzas per second v] to (((chefs) * (1)) + ((grannies) * (5)))
+> when I receive (update v)
+> update pizzas per second
 > ```
 
 > [!TASK]
 >
-> Give the new variables their starting values on the Stage's green flag. A granny starts at `100` pizzas, pricier than a chef because she works harder.
+> Update the Stage's green flag script to start the game's clock: set the new variables, work out the rate once, then add the pizzas-per-second every second.
 >
 > ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
@@ -80,12 +101,10 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > when green flag clicked
 > set [pizzas v] to (0)
 > set [pizzas per click v] to (1)
-> set [chefs v] to (0)
-> set [chef price v] to (15)
-> +set [grannies v] to (0)
-> +set [granny price v] to (100)
-> update pizzas per second
-> forever
+> +set [chefs v] to (0)
+> +set [chef price v] to (15)
+> +update pizzas per second
+> +forever
 > wait (1) seconds
 > change [pizzas v] by (pizzas per second)
 > end
@@ -93,10 +112,6 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TIP]
 >
-> Choosing costs and rewards so each upgrade feels worthwhile is called **game balancing**.
+> A regular moment when a game updates its numbers is called a **tick**. This clicker has one tick every second.
 
-Buy chefs, then save for a granny and watch your pizzas-per-second jump. You now have a full endless clicker: clicks, upgrades, and helpers all working together.
-
-> [!TIP]
->
-> Clicking, earning, buying upgrades, and then earning faster form the game's **core loop**.
+Buy a helper, then stop clicking. Your `pizzas`{:class="block3variables"} keep rising on their own.
