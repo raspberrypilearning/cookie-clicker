@@ -26,4 +26,4 @@ Make your equipment wiggle so the shop feels alive.
 >
 > Add the same script to your other equipment sprites by dragging it onto each one in the sprite list.
 
-Click the green flag. Your equipment rocks gently from side to side.
+Click the green flag. Each equipment sprite should rock gently from side to side and return to its starting direction after every wiggle.

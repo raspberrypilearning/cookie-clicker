@@ -12,12 +12,12 @@ Give your helpers a gentle pulse so they look busy at work.
 > when green flag clicked
 > forever
 > repeat (5)
->   change size by (2)
->   wait (0.05) seconds
-> end
-> repeat (5) times
+> change size by (2)
 > wait (0.05) seconds
+> end
+> repeat (5)
 > change size by (-2)
+> wait (0.05) seconds
 > end
 > end
 > ```
@@ -26,7 +26,7 @@ Give your helpers a gentle pulse so they look busy at work.
 >
 > Add the same script to your other helper by dragging it onto them in the sprite list.
 
-Click the green flag. Your helpers pulse away while they make pizzas. Your pizza shop is complete.
+Click the green flag. Each helper should grow by 10 in total, shrink by 10, and return to its starting size before the next pulse. Leave the game running and check that the helpers keep pulsing while the score still rises every second.
 
 > [!TIP]
 >

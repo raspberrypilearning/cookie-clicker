@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="470" viewBox="0 0 860 470" role="img" aria-labelledby="title desc">
+  <title id="title">Copying the chef scripts onto the granny sprite</title>
+  <desc id="desc">The Scratch Code tab shows two chef scripts with arrows pointing to the granny in the sprite list.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b6472"/>
+    </marker>
+  </defs>
+  <rect width="860" height="470" fill="#f6f7f9"/>
+  <rect x="16" y="16" width="828" height="438" rx="8" fill="#ffffff" stroke="#c7ccd4" stroke-width="2"/>
+  <rect x="16" y="16" width="828" height="52" rx="8" fill="#f2f3f5"/>
+  <rect x="32" y="27" width="80" height="32" rx="4" fill="#4c97ff"/>
+  <text x="72" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Code</text>
+  <text x="156" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#4b5260">Costumes</text>
+  <text x="250" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#4b5260">Sounds</text>
+
+  <text x="44" y="98" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#303642">Chef scripts</text>
+
+  <g transform="translate(44 116)">
+    <rect width="300" height="38" rx="6" fill="#ffbf00"/>
+    <text x="16" y="25" font-family="Arial, sans-serif" font-size="16" fill="#332600">when this sprite clicked</text>
+    <rect y="36" width="252" height="34" rx="5" fill="#cf63cf"/>
+    <text x="16" y="59" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">start sound Clang</text>
+    <rect y="68" width="286" height="34" rx="5" fill="#ff8c1a"/>
+    <text x="16" y="91" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">change pizzas by cost</text>
+    <rect y="100" width="252" height="34" rx="5" fill="#ff8c1a"/>
+    <text x="16" y="123" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">change helpers by 1</text>
+  </g>
+
+  <g transform="translate(44 282)">
+    <rect width="276" height="38" rx="6" fill="#ffbf00"/>
+    <text x="16" y="25" font-family="Arial, sans-serif" font-size="16" fill="#332600">when green flag clicked</text>
+    <rect y="36" width="210" height="34" rx="5" fill="#ffab19"/>
+    <text x="16" y="59" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">set drag mode</text>
+    <rect y="68" width="118" height="34" rx="5" fill="#9966ff"/>
+    <text x="16" y="91" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">hide</text>
+    <rect y="100" width="184" height="34" rx="5" fill="#ffab19"/>
+    <text x="16" y="123" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">forever...</text>
+  </g>
+
+  <path d="M 356 185 C 470 185, 490 205, 606 220" fill="none" stroke="#5b6472" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M 330 350 C 465 350, 490 295, 606 250" fill="none" stroke="#5b6472" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="390" y="216" width="178" height="42" rx="6" fill="#ffffff" stroke="#c7ccd4"/>
+  <text x="479" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#303642">Drag both scripts</text>
+
+  <rect x="620" y="88" width="196" height="334" rx="6" fill="#eef1f5" stroke="#c7ccd4"/>
+  <text x="718" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#303642">Sprite list</text>
+  <rect x="638" y="136" width="160" height="118" rx="6" fill="#ffffff" stroke="#c7ccd4"/>
+  <image href="chef.png" x="648" y="144" width="86" height="86" preserveAspectRatio="xMidYMid meet"/>
+  <text x="758" y="201" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#303642">Chef</text>
+  <rect x="638" y="270" width="160" height="132" rx="6" fill="#ffffff" stroke="#4c97ff" stroke-width="4"/>
+  <image href="granny.png" x="648" y="282" width="92" height="92" preserveAspectRatio="xMidYMid meet"/>
+  <text x="764" y="346" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#303642">Granny</text>
+  <text x="764" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#5b6472">drop here</text>
+</svg>

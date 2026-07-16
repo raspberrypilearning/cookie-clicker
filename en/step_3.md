@@ -51,6 +51,12 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 
 > [!TASK]
 >
+> Select the equipment sprite and use the **Size** box below the Stage to make it fit. The demo project's cutter is `30`% size.
+>
+> Drag it near the bottom of the Stage, leaving room for two more equipment sprites beside it.
+
+> [!TASK]
+>
 > In the **Costumes** tab, right-click the equipment costume and choose **duplicate**. Keep the plain costume first and the copied costume second.
 >
 > ![Right-clicking a costume to duplicate it in the Costumes tab.](images/duplicate-costume.png)
@@ -80,7 +86,7 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 
 > [!TASK]
 >
-> Make the equipment appear only once the player can afford it.
+> Make the equipment appear only once the player can afford it. The sound and speech bubble tell the player what has just appeared.
 >
 > The cutter costs `25` of the score variable, so it appears when the player has more than `24`. Use bigger numbers to make later equipment more expensive.
 >
@@ -92,6 +98,7 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 > +wait until <(pizzas) > (24)>
 > +show
 > +start sound (Alert v)
+> +say [New equipment unlocked!] for (2) seconds
 > ```
 
 > [!TIP]

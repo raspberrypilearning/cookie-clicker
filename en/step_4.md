@@ -12,6 +12,10 @@ Build on the cutter prototype with two more upgrades that make every click worth
 
 > [!TASK]
 >
+> Use the **Size** box below the Stage to resize the rolling pin, then drag it beside the cutter. The demo project's rolling pin is `30`% size.
+
+> [!TASK]
+>
 > Open the rolling pin's **Costumes** tab. Right-click its costume and choose **duplicate**, keeping the plain costume first and the copied costume second.
 >
 > Add a green tick to the second costume so the player can see when the rolling pin has been bought.
@@ -22,7 +26,7 @@ Build on the cutter prototype with two more upgrades that make every click worth
 >
 > > [!NOPRINT]
 > >
-> > ![Copying the cutter scripts onto the rolling pin and oven sprites.](images/copy-equipment-scripts.png)
+> > ![Copying the cutter scripts onto the rolling pin and oven sprites.](images/copy-equipment-scripts.gif)
 
 > [!TASK]
 >
@@ -38,6 +42,7 @@ Build on the cutter prototype with two more upgrades that make every click worth
 > wait until <(pizzas) > (499)>
 > show
 > start sound (Alert v)
+> say [New equipment unlocked!] for (2) seconds
 > ```
 >
 > ```blocks3
@@ -59,6 +64,10 @@ Click until the score reaches 500. The rolling pin appears; click it to buy it a
 > ![The demo project's oven.](images/oven.png)
 >
 > Use your own equipment, or save [the oven sprite](images/oven.png) and import it with **Upload**.
+
+> [!TASK]
+>
+> Resize the oven and drag it beside the other equipment. The demo project's oven is `17`% size.
 
 > [!TASK]
 >
@@ -84,6 +93,7 @@ Click until the score reaches 500. The rolling pin appears; click it to buy it a
 > wait until <(pizzas) > (2999)>
 > show
 > start sound (Alert v)
+> say [New equipment unlocked!] for (2) seconds
 > ```
 >
 > ```blocks3
@@ -96,7 +106,7 @@ Click until the score reaches 500. The rolling pin appears; click it to buy it a
 > end
 > ```
 
-Click until the score reaches 3000. Buy the oven and check that its green-tick costume appears and each click is worth 24.
+Click until the score reaches 3000. Buy the oven and check that its green-tick costume appears and each click is worth 24. Later, helpers can also earn the final pizza needed to unlock equipment; the speech bubble makes the alert's meaning clear.
 
 > [!TASK]
 >
