@@ -82,7 +82,7 @@ Click your sprite. Your score variable goes up.
 
 > [!TIP]
 >
-> **Visual feedback** shows the player that an action worked. The bounce makes every click feel immediate, even before the player checks the score.
+> **Visual feedback** shows the player that an action worked. The bounce makes every click feel real, even before the player checks the score.
 
 > [!TASK]
 >
