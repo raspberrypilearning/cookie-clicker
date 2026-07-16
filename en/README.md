@@ -94,3 +94,12 @@ Documentation for the project, including the structure and explanation of conten
 Markdown files containing step-by-step instructions for learners.  
 - Each step corresponds to a tutorial section.  
 - The number of steps varies by project.  
+
+### Scratch block examples
+Use fenced `blocks3` code blocks for Scratch scripts. Scratchblocks does not always infer calls to learner-created blocks, so add the explicit `:: custom` category override to every My Blocks call:
+
+```blocks3
+update pizzas per second :: custom
+```
+
+The `define` block is recognised automatically. Use the standard Scratch wording for built-in blocks, such as `repeat (5)`, so they render with the correct shape and category colour.

@@ -14,17 +14,21 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Add your own sprite with **Choose a Sprite** (library, **Upload**, or **Paint**). The pizza shop uses a pizza.
+> Add your own sprite with **Choose a Sprite** (library, **Upload**, or **Paint**).
+>
+> ![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
+>
+> Choose one clear thing players can click lots of times, such as food, treasure, a mascot, a ball, or something you draw yourself. The demo project uses a pizza.
 >
 > Use your own sprite, or save [the pizza sprite](images/pizza.png) and import it with **Upload**.
 >
-> ![The pizza shop's pizza sprite.](images/pizza.png)
->
-> ![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
+> ![The demo project's pizza sprite.](images/pizza.png)
 
 > [!TASK]
 >
-> Make a variable called `pizzas`{:class="block3variables"} and tick it so the player can see their score.
+> Make a score variable and give it a sensible plural name, such as `pizzas`, `coins`, `goals`, or `stars`. Tick it so the player can see their score.
+>
+> The demo blocks use `pizzas`{:class="block3variables"}. If you choose another name, use your variable wherever you see `pizzas`{:class="block3variables"}.
 >
 > ![The Make a Variable button in the Variables palette.](images/make-a-variable.png)
 >
@@ -32,7 +36,7 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Make your sprite clickable, so each click makes a pizza.
+> Make your sprite clickable, so each click increases your score variable.
 >
 > <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
@@ -41,15 +45,15 @@ Add something to click and a score that goes up when you click it.
 > change [pizzas v] by (1)
 > ```
 
-Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
+Click your sprite. Your score variable goes up.
 
 > [!TASK]
 >
-> Add a sound so a click feels good. Open the **Sounds** tab, click the speaker icon, and pick something short. 
-> 
-> Add it to the top of your script. Use `start sound`{:class="block3sound"} in > this project, not `play sound until done`{:class="block3sound"}, so the sound starts without holding up the rest of the program.
+> Add a sound so a click feels good. Open the **Sounds** tab, click the speaker icon, and pick something short.
 >
 > ![The Sounds tab at the top-left of the editor.](images/sounds_tab.png)
+>
+> Add it to the top of your script. Use `start sound`{:class="block3sound"} in this project, not `play sound until done`{:class="block3sound"}, so the sound starts without holding up the rest of the program.
 >
 > ```blocks3
 > when this sprite clicked
@@ -63,7 +67,7 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> Make the sprite bounce a little when clicked.
+> Make the sprite bounce by changing its size when clicked.
 >
 > <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
@@ -76,6 +80,10 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 > +change size by (-10)
 > ```
 
+> [!TIP]
+>
+> **Visual feedback** shows the player that an action worked. The bounce makes every click feel real, even before the player checks the score.
+
 > [!TASK]
 >
 > Start a new script. On the green flag, set the sprite to `not draggable`{:class="block3sensing"} so the player clicks it instead of accidentally dragging it around the stage.
@@ -86,6 +94,10 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 > when green flag clicked
 > set drag mode [not draggable v]
 > ```
+
+> [!TASK]
+>
+> Add the `Win`{:class="block3sound"} sound to your clicker sprite.
 
 > [!TASK]
 >
@@ -117,4 +129,4 @@ Click your sprite. The `pizzas`{:class="block3variables"} score goes up.
 
 > [!TASK]
 >
-> **Test:** Click the green flag. Your score should start at 0 and climbs each click.
+> **Test:** Click the green flag. Your score should start at 0 and climb each click.

@@ -10,7 +10,8 @@ steps:
   - title: Make the clicker
     completion:
       - engaged
-  - title: Add equipment
+  - title: Add the first equipment
+  - title: Add more equipment
   - title: Add auto-clickers
   - title: Add a second helper
     completion:
