@@ -61,7 +61,7 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 
 > [!TASK]
 >
-> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3myblocks"} definition.
+> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
 >
 > ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
@@ -91,4 +91,12 @@ Add a second, more powerful helper that makes more pizzas per second than the fi
 > end
 > ```
 
+> [!TIP]
+>
+> Choosing costs and rewards so each upgrade feels worthwhile is called **game balancing**.
+
 Buy chefs, then save for a granny and watch your pizzas-per-second jump. You now have a full endless clicker: clicks, upgrades, and helpers all working together.
+
+> [!TIP]
+>
+> Clicking, earning, buying upgrades, and then earning faster form the game's **core loop**.

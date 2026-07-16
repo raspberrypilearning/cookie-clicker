@@ -28,4 +28,8 @@ Give your helpers a gentle pulse so they look busy at work.
 
 Click the green flag. Your helpers pulse away while they make pizzas. Your pizza shop is complete.
 
+> [!TIP]
+>
+> Small animations that make a game feel lively without changing its rules are part of **game feel**, sometimes called **juice**.
+
 > [!SAVE]

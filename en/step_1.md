@@ -1,6 +1,6 @@
 ## What you will make
 
-You're going to build a **pizza clicker**: a game where you tap a pizza to make more pizzas, spend those pizzas on shiny equipment so every click is worth more, and hire helpers who keep cooking even when you take a break. Games like this are called **idle** or **endless clicker** games, and the fun comes from watching your numbers climb faster and faster.
+Build an endless clicker where players tap one clear thing, buy upgrades, and watch the numbers grow faster.
 
 > [!NOPRINT]
 >
@@ -10,10 +10,10 @@ You're going to build a **pizza clicker**: a game where you tap a pizza to make 
 
 > [!PRINTONLY]
 >
-> ![The finished pizza shop: readouts top-left, chef and granny on the right, and equipment along the bottom.](images/finished-project.png)
+> ![The finished demo project: readouts top-left, chef and granny on the right, and equipment along the bottom.](images/finished-project.png)
 
 
-Play the example to see where you're heading. Yours doesn't have to look the same: you'll choose your own thing to click, your own equipment, and your own helpers as you go.
+Play the demo, then make your own version!
 
 ### You will need:
 

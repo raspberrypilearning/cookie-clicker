@@ -65,7 +65,7 @@ Multiplying the price by `1.15` makes each helper cost about 15% more than the l
 
 > [!TASK]
 >
-> Click the `Stage`{:class="block3looks"}. In `My Blocks`{:class="block3myblocks"} click **Make a Block**, name it `update pizzas per second`{:class="block3myblocks"}, and build its definition.
+> Click the `Stage`{:class="block3looks"}. In `My Blocks`{:class="block3custom"} click **Make a Block**, name it `update pizzas per second`{:class="block3custom"}, and build its definition.
 >
 > ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 >
@@ -109,5 +109,9 @@ Multiplying the price by `1.15` makes each helper cost about 15% more than the l
 > change [pizzas v] by (pizzas per second)
 > end
 > ```
+
+> [!TIP]
+>
+> A regular moment when a game updates its numbers is called a **tick**. This clicker has one tick every second.
 
 Buy a helper, then stop clicking. Your `pizzas`{:class="block3variables"} keep rising on their own.
