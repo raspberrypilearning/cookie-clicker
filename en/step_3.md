@@ -111,23 +111,20 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 
 > [!TASK]
 >
-> Make it buyable. Clicking it spends `25` of the score variable, upgrades the player's clicks, and switches to the "bought" costume.
->
-> The `costume number = 1` check means only the plain costume can be bought, so the player cannot buy the same upgrade twice.
+> Make it buyable. Clicking it upgrades the player's clicks, switches to the "bought" costume, and then stops both cutter scripts so it cannot be bought twice.
 >
 > <p align="center"><img src="images/cutter.png" alt="Cutter sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when this sprite clicked
-> if <<(costume [number v]) = (1)> and <(pizzas) > (24)>> then
 > start sound (Tada v)
-> change [pizzas v] by (-25)
 > set [pizzas per click v] to (2)
 > next costume
-> end
+> stop [other scripts in sprite v]
+> stop [this script v]
 > ```
 
-Click until the score reaches 25. The cutter appears; click it to spend 25 and make every click worth 2.
+Click until the score reaches 25. The cutter appears; click it and check that every click is now worth 2.
 
 > [!TIP]
 >
