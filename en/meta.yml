@@ -12,10 +12,10 @@ steps:
       - engaged
   - title: Add the first equipment
   - title: Add more equipment
-  - title: Add auto-clickers
-  - title: Add a second helper
+  - title: Add a helper
     completion:
       - internal
+  - title: Add a second helper
   - title: Add a backdrop
     completion:
       - external
