@@ -22,7 +22,7 @@ Add a helper that makes pizzas every second, even when the player stops clicking
 
 > [!TASK]
 >
-> Make a variable called `helpers`{:class="block3variables"}. It stores how many of this first helper the player has hired.
+> Make a variable called `helpers`{:class="block3variables"}. This stores how many of this first helper the player has hired.
 
 > [!TASK]
 >
@@ -34,7 +34,7 @@ Add a helper that makes pizzas every second, even when the player stops clicking
 
 > [!TASK]
 >
-> Click the `Stage`{:class="block3looks"} and give the helper variables starting values on the green flag.
+> Click the `Stage`{:class="block3looks"} and give starting values to the helper variables on the green flag.
 >
 > The first helper costs `50`, so the cutter still unlocks first at `25`.
 >
@@ -90,7 +90,7 @@ The first helper costs 50 pizzas. After buying it, `helpers` should be `1` and `
 >
 > Make the helper appear only when the player can afford the current price.
 >
-> Scratch has no `greater than or equal to` block. Because the score uses whole numbers, checking for `pizzas > helper price - 1` does the same job.
+> Scratch has no `greater than or equal to` block. Because the score uses whole numbers, checking for `pizzas > helper price - 1` does the same thing.
 >
 > <p align="center"><img src="images/chef.png" alt="Chef sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
