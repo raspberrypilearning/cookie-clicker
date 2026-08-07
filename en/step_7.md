@@ -22,6 +22,6 @@ Right now the game works, but it's plain. Give it a proper shop front and tidy u
 >
 > The score, prices, and other information shown on top of a game are often called the **HUD**, short for **heads-up display**.
 
-Click the green flag and compare your layout with the example. Check that every sprite and variable can be seen, nothing covers the instructions, and the helper sprites are small enough to fit on the right. Yours can look however you like.
+Click the green flag and compare your layout with the example. Check that every sprite and variable can be seen, nothing covers the instructions, and the helper sprites are small enough to fit on the right. Your game can look however you like.
 
 ![The finished pizza shop: readouts top-left, chef and granny on the right with their prices, and equipment along the bottom.](images/pizza-shop-layout.svg)
