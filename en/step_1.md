@@ -1,6 +1,6 @@
 ## What you will make
 
-Build an endless clicker where players tap one clear thing, buy upgrades, and watch the numbers grow faster.
+Build an endless clicker where players tap one thing, buy upgrades, and watch the numbers grow faster.
 
 > [!NOPRINT]
 >
