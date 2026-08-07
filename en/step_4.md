@@ -106,11 +106,11 @@ Click until the score reaches 500. The rolling pin appears; click it to buy it a
 > end
 > ```
 
-Click until the score reaches 3000. Buy the oven and check that its green-tick costume appears and each click is worth 24. Later, helpers can also earn the final pizza needed to unlock equipment; the speech bubble makes the alert's meaning clear.
+Click until the score reaches 3000. Buy the oven and check that its green-tick costume appears and each click is worth 24. Later, helpers can also earn the final pizza needed to unlock equipment; the speech bubble makes it clear what the alert means.
 
 > [!TASK]
 >
-> Make winning need all the upgrades. On your main clicker sprite, update the `wait until`{:class="block3control"} so the player needs a high score **and** all the equipment (which sets `pizzas per click`{:class="block3variables"} to `24` in the demo project).
+> To win, make it so a player needs to get all the upgrades. On your main clicker sprite, update the `wait until`{:class="block3control"} so the player needs a high score **and** all the equipment (which sets `pizzas per click`{:class="block3variables"} to `24` in the demo project).
 >
 > <p align="center"><img src="images/pizza.png" alt="Pizza sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
