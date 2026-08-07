@@ -8,9 +8,9 @@ Add something to click and a score that goes up when you click it.
 
 > [!TASK]
 >
-> Delete the cat sprite.
+> Delete the cat sprite using the trashcan symbol.
 >
-> ![Deleting a sprite with the bin icon on its thumbnail.](images/delete-sprite.png)
+> ![Deleting a sprite with the trashcan icon.](images/delete-sprite.png)
 
 > [!TASK]
 >
@@ -49,7 +49,7 @@ Click your sprite. Your score variable goes up.
 
 > [!TASK]
 >
-> Add a sound so a click feels good. Open the **Sounds** tab, click the speaker icon, and pick something short.
+> Add a sound so a click is fun. Open the **Sounds** tab, click the speaker icon, and pick something short.
 >
 > ![The Sounds tab at the top-left of the editor.](images/sounds_tab.png)
 >
