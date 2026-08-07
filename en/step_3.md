@@ -111,7 +111,7 @@ Nothing changes yet, because `pizzas per click`{:class="block3variables"} is sti
 
 > [!TASK]
 >
-> Make it buyable. Clicking it upgrades the player's clicks, switches to the "bought" costume, and then stops both cutter scripts so it cannot be bought twice.
+> Make it buyable. Clicking it upgrades the player's clicks, causes a switch to the "bought" costume, and then stops both cutter scripts so it cannot be bought twice.
 >
 > <p align="center"><img src="images/cutter.png" alt="Cutter sprite icon." width="96" height="96" style="object-fit: contain;"></p>
 >
