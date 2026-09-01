@@ -1,9 +1,7 @@
 title: Pizza Party
 hero_image: images/banner.png
-description: >-
-  Build your own endless clicker game. Click to make pizzas, buy equipment so
-  every click is worth more, and hire helpers who keep cooking for you.
-listed: false
+description: Make a pizza-clicker game in this Code Club Arcade project.
+listed: true
 pdf: false
 steps:
   - title: What you will make
